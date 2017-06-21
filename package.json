@@ -1,11 +1,8 @@
 {
   "name": "mysportsfeeds-node",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A NodeJS wrapper for the MySportsFeeds Sports Data API (http://www.mysportsfeeds.com/)",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha test"
-  },
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MySportsFeeds/mysportsfeeds-node.git"
@@ -16,7 +13,7 @@
     "data",
     "api"
   ],
-  "author": "Brad Barkhouse <brad.barkhouse@mysportsfeeds.com> ()",
+  "author": "Brad Barkhouse <brad.barkhouse@mysportsfeeds.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/MySportsFeeds/mysportsfeeds-node/issues"
