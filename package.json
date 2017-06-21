@@ -2,7 +2,13 @@
   "name": "mysportsfeeds-node",
   "version": "0.1.1",
   "description": "A NodeJS wrapper for the MySportsFeeds Sports Data API (http://www.mysportsfeeds.com/)",
+  "directories": {
+    "lib": "./lib"
+  },
   "main": "lib/index.js",
+  "engines": [
+    "node"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MySportsFeeds/mysportsfeeds-node.git"
