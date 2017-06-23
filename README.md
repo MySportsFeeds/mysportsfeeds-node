@@ -20,6 +20,10 @@ Create main MySportsFeeds object with API version and verbosity as input paramet
 
     var msf = new MySportsFeeds("1.0", true);
 
+If you're using mysportsfeeds-node from a browser environment (like browserify), specify "null" as the 3rd argument to omit steps to save the results locally.
+
+    var msf = new MySportsFeeds("1.0", true, null);
+
 Authenticate (v1.0 uses your MySportsFeeds account credentials)
 
     msf.authenticate("YOUR_USERNAME", "YOUR_PASSWORD");
