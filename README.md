@@ -18,13 +18,13 @@ Create main MySportsFeeds object with API version and verbosity as input paramet
 
     var MySportsFeeds = require("mysportsfeeds-node");
 
-    var msf = new MySportsFeeds("1.0", true);
+    var msf = new MySportsFeeds("1.2", true);
 
 If you're using mysportsfeeds-node from a browser environment (like browserify), specify "null" as the 3rd argument to avoid attempts to save the results locally.
 
-    var msf = new MySportsFeeds("1.0", true, null);
+    var msf = new MySportsFeeds("1.2", true, null);
 
-Authenticate (v1.0 uses your MySportsFeeds account credentials)
+Authenticate (v1.x uses your MySportsFeeds account credentials)
 
     msf.authenticate("YOUR_USERNAME", "YOUR_PASSWORD");
 
