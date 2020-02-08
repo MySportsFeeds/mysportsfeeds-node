@@ -1,6 +1,6 @@
 {
   "name": "mysportsfeeds-node",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "A NodeJS wrapper for the MySportsFeeds Sports Data API (http://www.mysportsfeeds.com/)",
   "directories": {
     "lib": "./lib"
@@ -25,15 +25,19 @@
     "url": "https://github.com/MySportsFeeds/mysportsfeeds-node/issues"
   },
   "homepage": "https://github.com/MySportsFeeds/mysportsfeeds-node#readme",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
   "dependencies": {
     "q": "^1.5.1",
-    "request-promise": "^4.2.5",
     "request": "^2.88",
+    "request-promise": "^4.2.5",
     "util": "^0.12.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^6.2.2",
-    "nock": "^11.7.0"
+    "nock": "^11.7.0",
+    "nodemock": "^0.3.5"
   }
 }
