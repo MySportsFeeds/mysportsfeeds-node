@@ -29,9 +29,8 @@
     "test": "mocha --recursive"
   },
   "dependencies": {
+    "node-fetch": "^2.6.0",
     "q": "^1.5.1",
-    "request": "^2.88",
-    "request-promise": "^4.2.5",
     "util": "^0.12.1"
   },
   "devDependencies": {
