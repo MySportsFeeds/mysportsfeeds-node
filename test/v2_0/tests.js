@@ -402,3 +402,16 @@ describe('seasonal_dfs', () => {
   helpers.requiresFeed(data, endpoint);
   helpers.successful(data, endpoint);
 });
+
+describe('injury_history', () => {
+  const data = {
+    league: 'nfl',
+    season: '',
+    feed: 'injury_history',
+    format: 'json',
+  };
+  const endpoint = 'injury_history';
+
+  helpers.requiresFeed(data, endpoint);
+  helpers.successful(data, endpoint);
+});
