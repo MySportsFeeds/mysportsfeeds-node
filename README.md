@@ -7,7 +7,7 @@ Makes use of the [MySportsFeeds API](https://www.mysportsfeeds.com) - a flexible
 Free for Non-Commercial Use.
 
 ##Install
-    
+
     $ npm install mysportsfeeds-node
 
 If you haven't signed up for API access, do so here [https://www.mysportsfeeds.com](https://www.mysportsfeeds.com/index.php/register/)
@@ -72,4 +72,12 @@ Example (v2.0): Get full game schedule and scores for the MLB 2016 playoff seaso
     var data = msf.getData( 'mlb', '2016-playoff', 'seasonal_games', 'json', {});
 ```
 
-That's it!  Returned data is also stored locally under "results/" by default, in appropriately named files.
+That's it! Returned data is also stored locally under "results/" by default, in appropriately named files.
+
+## Contributing
+
+1. Fork this repo
+2. Make desired code changes
+3. Add related tests
+4. Run tests with `npm run test`
+5. Create pull request against MySportsFeed:master
