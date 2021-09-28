@@ -11,7 +11,7 @@ const password = 'password';
 
 nock.disableNetConnect();
 
-const msf = new MySportsFeeds(version, true);
+const msf = new MySportsFeeds(version, true, null, null);
 
 mock.named('auth').mock('authenticate').takes(username, password).returns(true);
 // mock.named('save_file').mock('fs').takesAll().returns(true);

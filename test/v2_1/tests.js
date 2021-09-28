@@ -415,3 +415,35 @@ describe('injury_history', () => {
   helpers.requiresFeed(data, endpoint);
   helpers.successful(data, endpoint);
 });
+
+describe("daily_dfs_projections", () => {
+  const data = {
+    league: "nfl",
+    season: "2019-regular",
+    feed: "daily_dfs_projections",
+    format: "json",
+    params: { date: "20191231" },
+  };
+  const endpoint = "dfs";
+
+  helpers.requiresSeason(data, endpoint);
+  helpers.requiresFeed(data, endpoint);
+  helpers.requiresDate(data, endpoint);
+  helpers.successful(data, endpoint);
+});
+
+describe("weekly_dfs_projections", () => {
+  const data = {
+    league: "nfl",
+    season: "2019-regular",
+    feed: "weekly_dfs_projections",
+    format: "json",
+    params: { week: "1" },
+  };
+  const endpoint = "dfs";
+
+  helpers.requiresSeason(data, endpoint);
+  helpers.requiresFeed(data, endpoint);
+  helpers.requiresWeek(data, endpoint);
+  helpers.successful(data, endpoint);
+});
